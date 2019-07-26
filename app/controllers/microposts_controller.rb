@@ -24,6 +24,7 @@ class MicropostsController < ApplicationController
   # POST /microposts
   # POST /microposts.json
   def create
+    debugger
     @micropost = Micropost.new(micropost_params)
 
     respond_to do |format|
